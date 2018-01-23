@@ -1,0 +1,75 @@
+.center-con{
+	width: 100%;
+	min-height: 500px;
+	height: auto;
+	overflow: hidden;
+	background: #f8f8f8;
+	padding-bottom: 50px;
+}
+.center-con .center-mbx{
+	width:1200px;
+	height: 55px;
+	line-height: 55px;
+	margin: 0 auto;
+	color: #666;
+	font-size: 14px;
+}
+.center-con .center-mbx a{
+	color: #666;
+}
+.center-con .center-xx{
+	width: 1198px;
+	min-height: 500px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+}
+.center-con .center-xx .center-xxl{
+	width:230px;
+	min-height: 500px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	padding-top: 23px;
+}
+.center-con .center-xx .center-xxr{
+	width: 967px;
+	min-height: 500px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	border-left: 1px solid #e5e5e5 ;	
+}
+.jb-xx{
+	width:230px;
+	height: 40px;
+	line-height: 40px;
+	background: #ff6400;
+}
+.jb-xx a{
+	width:230px;
+	height: 40px;
+	display: block;
+}
+.jb-xx a img{
+	float: left;
+	margin: 12px 10px 12px 20px;
+}
+.jb-xx a p{
+	float: left;
+	color: #fff;
+	font-size: 16px;
+}
+.jb-xxa{
+	background: #fff;
+}
+.jb-xxa a{
+	width:230px;
+	height: 40px;
+	display: block;
+}
+.jb-xxa a p{
+	color: #333;
+}
