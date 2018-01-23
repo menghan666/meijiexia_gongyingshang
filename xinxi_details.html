@@ -2,18 +2,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>基本信息详情</title>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/center_xinxi.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
-		<script type="text/javascript">
-			$(function(){	
-				$('.xx-tab ul li').click(function(){
-					$(this).addClass('hit').siblings().removeClass('hit');
-					$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();	
-				})
-			})
-		</script>
 	</head>
 	<body>
 		<div class="center-con">
@@ -80,89 +72,6 @@
 						</div>
 					</div>
 					<div class="xxr-ra">基本信息</div>
-					<div class="xx-tab">
-						<ul>
-							<li class="hit">个人</li>
-							<li>企业</li>
-						</ul>
-						<div class="panes">
-							<div class="pane" style="display: block;">
-								<form action="" method="post">
-									<div class="pane-name">
-										<p><span>*</span>姓名：</p>
-										<input type="text" name="" id="" value="" />
-									</div>
-									<div class="pane-name">
-										<p><span>*</span>手机号：</p>
-										<input type="text" name="" id="" value="" />
-									</div>
-									<div class="pane-name">
-										<p><span>*</span>身份证号：</p>
-										<input type="text" name="" id="" value="" />
-									</div>
-									<div class="pane-name">
-										<p><span>*</span>收款账号：</p>
-										<input type="text" name="" id="" value="" />
-									</div>
-									<div class="pane-name">
-										<p><span>*</span>手持身份证照片：</p>
-										<div class="pa-sc">
-											<a href="#">
-												<img src="img/dj_sc.png" />
-												<span>图片</span>
-											</a>
-										</div>
-										<input class="sc-an" type="file" name="fileField" id="fileField" />
-									</div>
-									<input class="su-btn" type="submit" id="" name="" value="保存" />
-								</form>
-							</div>
-							<div class="pane">
-								<form action="" method="post">
-									<div class="pane-name">
-										<p><span>*</span>营业执照：</p>
-										<div class="pa-sc">
-											<a href="#">
-												<img src="img/dj_sc.png" />
-												<span>图片</span>
-											</a>
-										</div>
-										<input class="sc-an" type="file" name="fileField" id="fileField" />
-									</div>
-									<div class="pane-name">
-										<p><span>*</span>联系人手机号：</p>
-										<input type="text" name="" id="" value="" />
-									</div>
-									<div class="pane-name">
-										<p><span>*</span>收款账号：</p>
-										<input type="text" name="" id="" value="" />
-									</div>
-									<div class="pane-name">
-										<p><span>*</span>营业执照：</p>
-										<div class="sc-img">
-											<div class="pa-sc">
-												<a href="#">
-													<img src="img/dj_sc.png" />
-													<span>正面照片</span>
-												</a>
-											</div>
-											<input class="sc-ana" type="file" name="fileField" id="fileField" />
-										</div>
-										<div class="sc-img">
-											<div class="pa-sc">
-												<a href="#">
-													<img src="img/dj_sc.png" />
-													<span>反面照片</span>
-												</a>
-											</div>
-											<input class="sc-ana" type="file" name="fileField" id="fileField" />
-										</div>
-									</div>
-									<input class="su-btn" type="submit" id="" name="" value="保存" />
-								</form>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
