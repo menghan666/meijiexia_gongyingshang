@@ -107,12 +107,9 @@
 									<div class="pane-name">
 										<p><span>*</span>手持身份证照片：</p>
 										<div class="pa-sc">
-											<a href="#">
-												<img src="img/dj_sc.png" />
-												<span>图片</span>
-											</a>
+											<img id="gr-img" src="" alt="" />
 										</div>
-										<input class="sc-an" type="file" name="fileField" id="fileField" />
+										<input class="sc-an" type="file" name="fileField" id="gr-sc" />
 									</div>
 									<input class="su-btn" type="submit" id="" name="" value="保存" />
 								</form>
@@ -122,10 +119,7 @@
 									<div class="pane-name">
 										<p><span>*</span>营业执照：</p>
 										<div class="pa-sc">
-											<a href="#">
-												<img src="img/dj_sc.png" />
-												<span>图片</span>
-											</a>
+												<img src="" alt="" />	
 										</div>
 										<input class="sc-an" type="file" name="fileField" id="fileField" />
 									</div>
@@ -142,8 +136,7 @@
 										<div class="sc-img">
 											<div class="pa-sc">
 												<a href="#">
-													<img src="img/dj_sc.png" />
-													<span>正面照片</span>
+													<img src="img/dj_sc.png" />	
 												</a>
 											</div>
 											<input class="sc-ana" type="file" name="fileField" id="fileField" />
@@ -151,8 +144,7 @@
 										<div class="sc-img">
 											<div class="pa-sc">
 												<a href="#">
-													<img src="img/dj_sc.png" />
-													<span>反面照片</span>
+													<img src="img/dj_sc.png" />	
 												</a>
 											</div>
 											<input class="sc-ana" type="file" name="fileField" id="fileField" />
@@ -171,23 +163,25 @@
         	时间：2018-01-23
         	描述：修改头像弹框
         -->
-        <div class="tx-con">
+        <form class="tx-con">
         	<div class="tx-cona">
         		<p>更换头像</p>
         		<a class="close-a" href="javascript:;"><img src="img/close_btn.png"/></a>
         	</div>
         	<div class="xz-img">
-        		<input type="file" name="fileField" id="fileField" />
+        		<input type="file" name="fileField" id="tx" />
         		<div class="xz-imga">
-        			<img src="img/tx_img.jpg" />
+        			<img id="tx-img" src="" alt="" style="display: none;"  />
         		</div>
         		<div class="tx-btn">
-        			<input type="submit" name="" id="" value="保存修改" />
+        			<input type="submit" name=""  value="保存修改" />
         		</div>
         	</div>
-        </div>
+        </form>
         <div class="touxiang-bg"></div>
+        <script src="js/uploadPreview.js"></script>
 		<script type="text/javascript">
+			
 			$(".img-a").click(function(){
 				if($(".order-li").css("display")=="none"){
 					$(".order-li").show();
@@ -224,6 +218,17 @@
 			    };
 			    H_login.run();
 			});
+			//头像更换
+				$("#tx").click(function(){
+					$("#tx-img").css("display","block");
+					$("#tx").uploadPreview({ Img: "tx-img", Width: 210, Height: 210 });
+				});
+			//个人图片上传
+				$("#gr-sc").click(function(){
+					$("#rg-img").css("display","block");	
+					$("#gr-sc").uploadPreview({ Img: "gr-img", Width: 230, Height: 170 });
+				});
+				
 		</script>
 	</body>
 </html>
