@@ -107,7 +107,7 @@
 									<div class="pane-name">
 										<p><span>*</span>手持身份证照片：</p>
 										<div class="pa-sc">
-											<img id="gr-img" src="" alt="" />
+											<img id="gr-img" src="" alt="" style="display: none;" />
 										</div>
 										<input class="sc-an" type="file" name="fileField" id="gr-sc" />
 									</div>
@@ -119,9 +119,9 @@
 									<div class="pane-name">
 										<p><span>*</span>营业执照：</p>
 										<div class="pa-sc">
-												<img src="" alt="" />	
+											<img id="yy-zz" src="" alt="" style="display: none;" />	
 										</div>
-										<input class="sc-an" type="file" name="fileField" id="fileField" />
+										<input class="sc-an" type="file" name="fileField" id="yy" />
 									</div>
 									<div class="pane-name">
 										<p><span>*</span>联系人手机号：</p>
@@ -132,22 +132,18 @@
 										<input type="text" name="" id="" value="" />
 									</div>
 									<div class="pane-name">
-										<p><span>*</span>营业执照：</p>
+										<p><span>*</span>法人证件正反面：</p>
 										<div class="sc-img">
 											<div class="pa-sc">
-												<a href="#">
-													<img src="img/dj_sc.png" />	
-												</a>
+												<img id="fr-img" src="" alt="" style="display: none;" />	
 											</div>
-											<input class="sc-ana" type="file" name="fileField" id="fileField" />
+											<input class="sc-ana" type="file" name="fileField" id="fr-zm" />
 										</div>
 										<div class="sc-img">
 											<div class="pa-sc">
-												<a href="#">
-													<img src="img/dj_sc.png" />	
-												</a>
+												<img id="fr-imga" src="" alt="" style="display: none;" />	
 											</div>
-											<input class="sc-ana" type="file" name="fileField" id="fileField" />
+											<input class="sc-ana" type="file" name="fileField" id="fr-zma" />
 										</div>
 									</div>
 									<input class="su-btn" type="submit" id="" name="" value="保存" />
@@ -223,12 +219,26 @@
 					$("#tx-img").css("display","block");
 					$("#tx").uploadPreview({ Img: "tx-img", Width: 210, Height: 210 });
 				});
+			
+			//企业营业执照上传
+				$("#yy").click(function(){
+					$("#yy-zz").css("display","block");	
+					$("#yy").uploadPreview({ Img: "yy-zz", Width: 230, Height: 170 });
+				});	
+			//法人证件正反面
+				$("#fr-zm").click(function(){
+					$("#fr-img").css("display","block");	
+					$("#fr-zm").uploadPreview({ Img: "fr-img", Width: 230, Height: 170 });
+				});	
+				$("#fr-zma").click(function(){
+					$("#fr-imga").css("display","block");	
+					$("#fr-zma").uploadPreview({ Img: "fr-imga", Width: 230, Height: 170 });
+				});	
 			//个人图片上传
 				$("#gr-sc").click(function(){
-					$("#rg-img").css("display","block");	
+					$("#gr-img").css("display","block");	
 					$("#gr-sc").uploadPreview({ Img: "gr-img", Width: 230, Height: 170 });
-				});
-				
+				});	
 		</script>
 	</body>
 </html>

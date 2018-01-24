@@ -87,22 +87,23 @@
         	时间：2018-01-23
         	描述：修改头像弹框
         -->
-        <div class="tx-con">
+        <form class="tx-con">
         	<div class="tx-cona">
         		<p>更换头像</p>
         		<a class="close-a" href="javascript:;"><img src="img/close_btn.png"/></a>
         	</div>
         	<div class="xz-img">
-        		<input type="file" name="fileField" id="fileField" />
+        		<input type="file" name="fileField" id="tx" />
         		<div class="xz-imga">
-        			<img src="img/tx_img.jpg" />
+        			<img id="tx-img" src="" alt="" style="display: none;"  />
         		</div>
         		<div class="tx-btn">
         			<input type="submit" name="" id="" value="保存修改" />
         		</div>
         	</div>
-        </div>
+        </form>
         <div class="touxiang-bg"></div>
+        <script src="js/uploadPreview.js"></script>
 		<script type="text/javascript">
 			$(".img-a").click(function(){
 				if($(".order-li").css("display")=="none"){
@@ -140,6 +141,12 @@
 			    };
 			    H_login.run();
 			});
+			//头像更换
+				$("#tx").click(function(){
+					$("#tx-img").css("display","block");
+					$("#tx").uploadPreview({ Img: "tx-img", Width: 210, Height: 210 });
+				});
+				
 		</script>
 	</body>
 </html>
