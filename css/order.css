@@ -112,14 +112,25 @@
 }.cz_box p {
 	margin-top: 5px;
 }
-.cz_box p a{
+.cz_box .jie_dan a{
 	display: block;
 	width: 70px;
 	margin: 0 auto;
 	text-align: center;
-	padding: 2px 0;
+	padding: 2px 0 4px 0;
 	color:#fff;
 	background-color: #FF6400;
+	border-radius: 5px;
+}
+.cz_box .ytj button{
+	display: block;
+	width: 70px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 2px 0 4px 0;
+	color:#fff;
+	background-color: #ccc;
+	border:1px solid #ccc;
 	border-radius: 5px;
 }
 .center-con .center-xx .center-xxl{
@@ -159,6 +170,32 @@
 	margin: 10px auto 0 auto;
 	color:#666;
 }
+.guo_qi table {
+	color:#999;
+}
+.guo_qi table tr th{
+	color:#333;
+}
+.tx-con{
+	position: relative;
+	display: block;
+}
+.tx-con .close-a{
+	position: absolute;
+	top:10px;
+	right: 10px;
+}
+.tx-cona{
+	text-align: center;
+}
+.tx-cona span{
+	font-size: 16px;
+}
+.touxiang-bg{
+	display: block;
+	opacity: 1;
+	background-color: rgba(0,0,0,0.7) !important;
+}
 @media only screen and (min-width: 1367px) {
 	.bz_box{
 		right:-158px !important;
@@ -170,6 +207,10 @@
 		font-size: 12px;
 		text-align: left;
 	}
+	.page{
+		width: 525px;
+		margin: 60px auto 20px auto !important;
+	}
 }
 @media only screen and (max-width: 1366px) {
 	.bz_box p{
@@ -177,5 +218,9 @@
 		margin: 0 auto;
 		font-size: 12px;
 		text-align: left;
+	}
+	.page{
+		width: 490px;
+		margin: 60px auto 20px auto !important;
 	}
 }

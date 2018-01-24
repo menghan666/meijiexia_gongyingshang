@@ -2,10 +2,12 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>我的订单</title>
+		<title>已过期订单</title>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/center_xinxi.css" />
 		<link rel="stylesheet" href="css/order.css" />
+		<!--分页插件-->
+		<link rel="stylesheet" href="css/page.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 	</head>
 	<body>
@@ -36,8 +38,8 @@
 						</a>
 						<div class="order-li">
 							<ul>
-								<li><a href="#" class="order_act">全部订单</a></li>
-								<li><a href="#">已过期订单</a></li>
+								<li><a href="#">全部订单</a></li>
+								<li><a href="#" class="order_act">已过期订单</a></li>
 								<li><a href="#">待接订单</a></li>
 								<li><a href="#">执行中订单</a></li>
 								<li><a href="#">已审核订单</a></li>
@@ -56,7 +58,7 @@
 						</div>
 					</div>
 					<!--订单列表-->
-					<div class="order_list">
+					<div class="order_list guo_qi">
 						<table border="0" cellspacing="" cellpadding="">
 							<!--表头-->
 							<tr class="header_tr">
@@ -65,12 +67,9 @@
 								<th>对接人</th>
 								<th>金额</th>
 								<th>派单时间</th>
-								<th>截止时间</th>
 								<th>订单状态</th>
-								<th>操作</th>
 							</tr>
-							<!--待接订单-->
-							<tr class="">
+							<tr>
 								<td>XW20180108</td>
 								<td>新闻发稿</td>
 								<td class="dui_jie">
@@ -86,23 +85,9 @@
 								</td>
 								<td>1200</td>
 								<td>2017-10-01</td>
-								<td>2017-10-01</td>
-								<td class="color_y">待接订单</td>
-								<td class="cz_box">
-									<div class="bei_zhu">
-										<p style="margin: 0;">备注信息</p>
-										<!--消息提示红点-->
-										<span class="news_dian"></span>
-										<div class="link_way bz_box" style="display: none;">
-											<p>新闻发稿订单，需要备注说明的信息在这里展示</p>
-										</div>
-									</div>
-									<p>拒单</p>
-									<p><a href="#">接单</a></p>
-								</td>
+								<td>已过期</td>
 							</tr>
-							<!--执行中...-->
-							<tr class="">
+							<tr>
 								<td>XW20180108</td>
 								<td>新闻发稿</td>
 								<td class="dui_jie">
@@ -118,23 +103,9 @@
 								</td>
 								<td>1200</td>
 								<td>2017-10-01</td>
-								<td>2017-10-01</td>
-								<td>执行中...</td>
-								<td class="cz_box">
-									<div class="bei_zhu">
-										<p style="margin: 0;">备注信息</p>
-										<!--消息提示红点-->
-										<span class="news_dian"></span>
-										<div class="link_way bz_box" style="display: none;">
-											<p>新闻发稿订单，需要备注说明的信息在这里展示</p>
-										</div>
-									</div>
-									<p>拒单</p>
-									<p><a href="#">接单</a></p>
-								</td>
+								<td>已过期</td>
 							</tr>
-							<!--审核中订单-->
-							<tr class="">
+							<tr>
 								<td>XW20180108</td>
 								<td>新闻发稿</td>
 								<td class="dui_jie">
@@ -150,12 +121,9 @@
 								</td>
 								<td>1200</td>
 								<td>2017-10-01</td>
-								<td>2017-10-01</td>
-								<td class="color-999">审核中订单</td>
-								<td class="cz_box"></td>
+								<td>已过期</td>
 							</tr>
-							<!--已收款-->
-							<tr class="">
+							<tr>
 								<td>XW20180108</td>
 								<td>新闻发稿</td>
 								<td class="dui_jie">
@@ -171,12 +139,9 @@
 								</td>
 								<td>1200</td>
 								<td>2017-10-01</td>
-								<td>2017-10-01</td>
-								<td class="color_y">已收款</td>
-								<td class="cz_box"></td>
+								<td>已过期</td>
 							</tr>
-							<!--已收款-->
-							<tr class="">
+							<tr>
 								<td>XW20180108</td>
 								<td>新闻发稿</td>
 								<td class="dui_jie">
@@ -192,12 +157,9 @@
 								</td>
 								<td>1200</td>
 								<td>2017-10-01</td>
-								<td>2017-10-01</td>
-								<td class="color_y">已收款</td>
-								<td class="cz_box"></td>
+								<td>已过期</td>
 							</tr>
-							<!--已收款-->
-							<tr class="">
+							<tr>
 								<td>XW20180108</td>
 								<td>新闻发稿</td>
 								<td class="dui_jie">
@@ -213,12 +175,9 @@
 								</td>
 								<td>1200</td>
 								<td>2017-10-01</td>
-								<td>2017-10-01</td>
-								<td class="color_y">已收款</td>
-								<td class="cz_box"></td>
+								<td>已过期</td>
 							</tr>
-							<!--已收款-->
-							<tr class="">
+							<tr>
 								<td>XW20180108</td>
 								<td>新闻发稿</td>
 								<td class="dui_jie">
@@ -234,72 +193,7 @@
 								</td>
 								<td>1200</td>
 								<td>2017-10-01</td>
-								<td>2017-10-01</td>
-								<td class="color_y">已收款</td>
-								<td class="cz_box"></td>
-							</tr>
-							<!--已收款-->
-							<tr class="">
-								<td>XW20180108</td>
-								<td>新闻发稿</td>
-								<td class="dui_jie">
-									<div class="dj_box">
-										<span>小美</span> 
-										<img src="img/sanjiao.png"/>
-										<!--对接人联系方式框-->
-										<div class="link_way" style="display: none;">
-											<p>QQ : 227845699</p>
-											<a href="#">在线联系</a>
-										</div>
-									</div>
-								</td>
-								<td>1200</td>
-								<td>2017-10-01</td>
-								<td>2017-10-01</td>
-								<td class="color_y">已收款</td>
-								<td class="cz_box"></td>
-							</tr>
-							<!--已收款-->
-							<tr class="">
-								<td>XW20180108</td>
-								<td>新闻发稿</td>
-								<td class="dui_jie">
-									<div class="dj_box">
-										<span>小美</span> 
-										<img src="img/sanjiao.png"/>
-										<!--对接人联系方式框-->
-										<div class="link_way" style="display: none;">
-											<p>QQ : 227845699</p>
-											<a href="#">在线联系</a>
-										</div>
-									</div>
-								</td>
-								<td>1200</td>
-								<td>2017-10-01</td>
-								<td>2017-10-01</td>
-								<td class="color_y">已收款</td>
-								<td class="cz_box"></td>
-							</tr>
-							<!--已收款-->
-							<tr class="">
-								<td>XW20180108</td>
-								<td>新闻发稿</td>
-								<td class="dui_jie">
-									<div class="dj_box">
-										<span>小美</span> 
-										<img src="img/sanjiao.png"/>
-										<!--对接人联系方式框-->
-										<div class="link_way" style="display: none;">
-											<p>QQ : 227845699</p>
-											<a href="#">在线联系</a>
-										</div>
-									</div>
-								</td>
-								<td>1200</td>
-								<td>2017-10-01</td>
-								<td>2017-10-01</td>
-								<td class="color_y">已收款</td>
-								<td class="cz_box"></td>
+								<td>已过期</td>
 							</tr>
 						</table>
 					</div>
@@ -307,6 +201,8 @@
 					<div class="tong_ji">
 						<p>当前页面：共计10个订单／共计金额：23900元</p>
 					</div>
+					<!--分页-->
+					<ul class="page clearfix" maxshowpageitem="5" pagelistcount="10"  id="page"></ul>
 				</div>
 			</div>
 		</div>
@@ -327,6 +223,8 @@
         	</div>
         </div>
         <div class="touxiang-bg"></div>
+        <!--分页插件-->
+        <script type="text/javascript" src="js/page.js" ></script>
 		<script type="text/javascript">
 			$(".img-a").click(function(){
 				if($(".order-li").css("display")=="none"){
@@ -386,13 +284,18 @@
 				$(this).find("img").show();
 				$(this).children(".link_way").hide();
 			});
-			//备注信息hover
-			$(".bei_zhu").hover(function(){
-				$(this).find(".news_dian").hide();
-				$(this).children(".link_way").show();
-			},function(){
-				$(this).children(".link_way").hide();
-			});
+			
+			//分页js
+			function tt(dd){
+				//alert(dd);
+			}
+			var GG = {
+				"kk":function(mm){
+				   // alert(mm);
+				}
+			}
+			
+			$("#page").initPage(71,1,GG.kk);
 		</script>
 	</body>
 </html>
