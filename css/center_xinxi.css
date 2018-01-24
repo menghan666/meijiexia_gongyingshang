@@ -478,3 +478,42 @@ table.ysh-tb tr td span{
 	margin: 0 auto;
 	color: #666;
 }
+.dj_box{
+	display: inline-block;
+	padding: 0px 8px;
+	position: relative;
+	cursor: pointer;
+	
+}
+table.ysh-tb tr td .dj_box span{
+	color: #333;
+}
+.dj_box img{
+	display: inline-block;
+	position: absolute;
+	bottom:0;
+	right:0;
+	
+}
+.link_way{
+	position: absolute;
+	top: -6px;
+    right: -130px;
+	padding:20px 15px;
+	background: url(../img/link_ways.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.link_way p{
+	color:#666;
+}
+.link_way a{
+	width: 100px;
+	display: block;
+	text-align: center;
+	color:#fff;
+	padding: 2px;
+	border-radius: 3px;
+	margin: 0 auto;
+	margin-top: 5px;
+	background-color: #ff6401;
+}
