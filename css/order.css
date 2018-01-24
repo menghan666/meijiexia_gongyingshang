@@ -176,25 +176,42 @@
 .guo_qi table tr th{
 	color:#333;
 }
-.tx-con{
-	position: relative;
-	display: block;
+.touxiang-bg{
+	opacity: 1;
+	background-color: rgba(0,0,0,0.7) !important;
 }
-.tx-con .close-a{
+.touxiang_box{
+	position: relative !important;
+	display: block;
+	width: 520px;
+	min-height: 400px;
+	margin: 10% auto;
+	box-sizing: border-box;
+	padding: 20px 40px;
+	background-color: #fff;
+}
+.touxiang_box .close-a{
 	position: absolute;
 	top:10px;
 	right: 10px;
 }
-.tx-cona{
+.touxiang_box .tx-cona{
 	text-align: center;
 }
-.tx-cona span{
+.touxiang_box .tx-cona span{
 	font-size: 16px;
 }
-.touxiang-bg{
-	display: block;
-	opacity: 1;
-	background-color: rgba(0,0,0,0.7) !important;
+.touxiang_box form{
+	padding: 20px 0;
+}
+.touxiang_box .img_box {
+	width: 100px;
+	height: 100px;
+	margin-left: 10px;
+	border:1px solid #e5e5e5;
+}
+.touxiang_box .img_box img{
+	width: 100%;
 }
 @media only screen and (min-width: 1367px) {
 	.bz_box{
