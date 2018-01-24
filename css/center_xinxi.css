@@ -40,6 +40,7 @@
 	height: auto;
 	overflow: hidden;
 	float: left;
+	padding-bottom: 50px;
 	border-left: 1px solid #e5e5e5 ;	
 }
 .jb-xx{
@@ -381,3 +382,96 @@ input.sc-ana{
 	opacity:0.3;
 	display:none;
 	}
+.xx-xa{
+	width:890px;
+	min-height: 100px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.xx-xa p{
+	line-height: 40px;
+	color: #666666;
+}
+.xx-xa p img{
+	display: inline-block;
+	vertical-align: top;
+}
+/*我的技能*/
+
+/*我的订单*/
+.order-top{
+	width:930px;
+	height: 35px;
+	border-bottom: 1px solid #e5e5e5;
+	margin: 40px auto 0;
+}
+.order-top p{
+	float: left;
+	font-weight: bold;
+	font-size: 16px;
+	color: #333;
+}
+.order-top p span{
+	padding: 0 20px;
+	font-weight: normal;
+	color: #333;
+	font-size: 14px;
+}
+.order-top .order-topr{
+	width:340px;
+	height: 30px;
+	float: right;
+	border: 1px solid #e5e5e5;
+}
+.order-top .order-topr input{
+	width:290px;
+	line-height: 29px;
+	padding-left: 10px;
+	border: none;
+	float: left;
+	color: #666
+}
+.order-top .order-topr .order-ss{
+	width:30px;
+	height: 30px;
+	float: right;
+	background: #e5e5e5;
+	text-align: center;
+	line-height: 30px;
+}
+.order-top .order-topr .order-ss button{
+	height: 30px;
+	border: none;
+	background: none;
+}
+table.ysh-tb{
+	width:930px;
+	margin: 15px auto;
+	text-align: center;
+	padding: 10px 0;
+	color: #333;
+}
+table.ysh-tb tr.tr-top{
+	background: #f3f3f3;
+	line-height: 35px;
+}
+table.ysh-tb tr{
+	border-bottom: 1px solid #e5e5e5;
+}
+table.ysh-tb tr td{
+	padding: 15px 0;
+	color: #333;
+}
+table.ysh-tb tr td p{
+	color: #999;
+}
+table.ysh-tb tr td span{
+	color: #ff8334;
+}
+.tshi-p{
+	width: 930px;
+	line-height: 40px;
+	margin: 0 auto;
+	color: #666;
+}
