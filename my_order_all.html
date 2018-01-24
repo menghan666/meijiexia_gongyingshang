@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>全部订单</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/center_xinxi.css" />
+		<link rel="stylesheet" href="css/order.css" />
+		<!--分页插件-->
+		<link rel="stylesheet" href="css/page.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	</head>
+	<body>
+		<div class="center-con">
+			<!--面包屑-->
+			<div class="center-mbx">
+				<a href="#">首页</a> > <a href="#">财务中心</a> > <span>消费记录</span>
+			</div>
+			<div class="center-xx clearfix">
+				<!--左侧菜单-->
+				<div class="center-xxl">
+					<div class="jb-xx">
+						<a href="#">
+							<img src="img/center_user.png" />
+							<p>基本信息</p>
+						</a>
+					</div>
+					<div class="jb-xx jb-xxa">
+						<a href="#">
+							<img src="img/center_jineng.png" />
+							<p>我的技能</p>
+						</a>
+					</div>
+					<div class="jb-xx jb-xxa">
+						<a href="#">
+							<img src="img/center_order.png" />
+							<p class="img-a">我的订单<img src="img/nav_j.png" /></p>
+						</a>
+						<div class="order-li">
+							<ul>
+								<li><a href="#" class="order_act">全部订单</a></li>
+								<li><a href="#">已过期订单</a></li>
+								<li><a href="#">待接订单</a></li>
+								<li><a href="#">执行中订单</a></li>
+								<li><a href="#">已审核订单</a></li>
+								<li><a href="#">已收款订单</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="center-xxr">
+					<div class="xxr-ra clearfix">
+						<div class="float_lf">全部订单 <span class="order_num">(269)</span> </div>
+						<!--搜索框-->
+						<div class="search_box float_rt clearfix">
+							<input class="float_lf" type="search" name="" placeholder="" />
+							<button class="float_lf"><img src="img/search_img.png" alt="" /></button>
+						</div>
+					</div>
+					<!--订单列表-->
+					<div class="order_list">
+						<table border="0" cellspacing="" cellpadding="">
+							<!--表头-->
+							<tr class="header_tr">
+								<th>订单编号</th>
+								<th>订单名称</th>
+								<th>对接人</th>
+								<th>金额</th>
+								<th>派单时间</th>
+								<th>截止时间</th>
+								<th>订单状态</th>
+								<th>操作</th>
+							</tr>
+							<!--待接订单-->
+							<tr class="">
+								<td>XW20180108</td>
+								<td>新闻发稿</td>
+								<td class="dui_jie">
+									<div class="dj_box">
+										<span>小美</span> 
+										<img src="img/sanjiao.png"/>
+										<!--对接人联系方式框-->
+										<div class="link_way" style="display: none;">
+											<p>QQ : 227845699</p>
+											<a href="#">在线联系</a>
+										</div>
+									</div>
+								</td>
+								<td>1200</td>
+								<td>2017-10-01</td>
+								<td>2017-10-01</td>
+								<td class="color_y">待接订单</td>
+								<td class="cz_box">
+									<div class="bei_zhu">
+										<p style="margin: 0;">备注信息</p>
+										<!--消息提示红点-->
+										<span class="news_dian"></span>
+										<div class="link_way bz_box" style="display: none;">
+											<p>新闻发稿订单，需要备注说明的信息在这里展示</p>
+										</div>
+									</div>
+									<p><a href="#">拒单</a></p>
+									<p class="jie_dan"><a href="#">接单</a></p>
+								</td>
+							</tr>
+							<!--待接订单-->
+							<tr class="">
+								<td>XW20180108</td>
+								<td>新闻发稿</td>
+								<td class="dui_jie">
+									<div class="dj_box">
+										<span>小美</span> 
+										<img src="img/sanjiao.png"/>
+										<!--对接人联系方式框-->
+										<div class="link_way" style="display: none;">
+											<p>QQ : 227845699</p>
+											<a href="#">在线联系</a>
+										</div>
+									</div>
+								</td>
+								<td>1200</td>
+								<td>2017-10-01</td>
+								<td>2017-10-01</td>
+								<td class="color_y">待接订单</td>
+								<td class="cz_box">
+									<div class="bei_zhu">
+										<p style="margin: 0;">备注信息</p>
+										<!--消息提示红点-->
+										<span class="news_dian"></span>
+										<div class="link_way bz_box" style="display: none;">
+											<p>新闻发稿订单，需要备注说明的信息在这里展示</p>
+										</div>
+									</div>
+									<p><a href="#">拒单</a></p>
+									<p class="jie_dan"><a href="#">接单</a></p>
+								</td>
+							</tr>
+							<!--待接订单-->
+							<tr class="">
+								<td>XW20180108</td>
+								<td>新闻发稿</td>
+								<td class="dui_jie">
+									<div class="dj_box">
+										<span>小美</span> 
+										<img src="img/sanjiao.png"/>
+										<!--对接人联系方式框-->
+										<div class="link_way" style="display: none;">
+											<p>QQ : 227845699</p>
+											<a href="#">在线联系</a>
+										</div>
+									</div>
+								</td>
+								<td>1200</td>
+								<td>2017-10-01</td>
+								<td>2017-10-01</td>
+								<td class="color_y">待接订单</td>
+								<td class="cz_box">
+									<div class="bei_zhu">
+										<p style="margin: 0;">备注信息</p>
+										<!--消息提示红点-->
+										<span class="news_dian"></span>
+										<div class="link_way bz_box" style="display: none;">
+											<p>新闻发稿订单，需要备注说明的信息在这里展示</p>
+										</div>
+									</div>
+									<p><a href="#">拒单</a></p>
+									<p class="jie_dan"><a href="#">接单</a></p>
+								</td>
+							</tr>
+							<!--执行中...-->
+							<tr class="">
+								<td>XW20180108</td>
+								<td>新闻发稿</td>
+								<td class="dui_jie">
+									<div class="dj_box">
+										<span>小美</span> 
+										<img src="img/sanjiao.png"/>
+										<!--对接人联系方式框-->
+										<div class="link_way" style="display: none;">
+											<p>QQ : 227845699</p>
+											<a href="#">在线联系</a>
+										</div>
+									</div>
+								</td>
+								<td>1200</td>
+								<td>2017-10-01</td>
+								<td>2017-10-01</td>
+								<td>执行中...</td>
+								<td class="cz_box">
+									<div class="bei_zhu">
+										<p style="margin: 0;">备注信息</p>
+										<!--消息提示红点-->
+										<span class="news_dian"></span>
+										<div class="link_way bz_box" style="display: none;">
+											<p>新闻发稿订单，需要备注说明的信息在这里展示</p>
+										</div>
+									</div>
+									<p class="jie_dan"><a href="#">接单</a></p>
+								</td>
+							</tr>
+							<!--审核中订单-->
+							<tr class="">
+								<td>XW20180108</td>
+								<td>新闻发稿</td>
+								<td class="dui_jie">
+									<div class="dj_box">
+										<span>小美</span> 
+										<img src="img/sanjiao.png"/>
+										<!--对接人联系方式框-->
+										<div class="link_way" style="display: none;">
+											<p>QQ : 227845699</p>
+											<a href="#">在线联系</a>
+										</div>
+									</div>
+								</td>
+								<td>1200</td>
+								<td>2017-10-01</td>
+								<td>2017-10-01</td>
+								<td class="color-999">审核中订单</td>
+								<td class="cz_box"></td>
+							</tr>
+							<!--已收款-->
+							<tr class="">
+								<td>XW20180108</td>
+								<td>新闻发稿</td>
+								<td class="dui_jie">
+									<div class="dj_box">
+										<span>小美</span> 
+										<img src="img/sanjiao.png"/>
+										<!--对接人联系方式框-->
+										<div class="link_way" style="display: none;">
+											<p>QQ : 227845699</p>
+											<a href="#">在线联系</a>
+										</div>
+									</div>
+								</td>
+								<td>1200</td>
+								<td>2017-10-01</td>
+								<td>2017-10-01</td>
+								<td class="color_y">已收款</td>
+								<td class="cz_box"></td>
+							</tr>
+							<!--已收款-->
+							<tr class="">
+								<td>XW20180108</td>
+								<td>新闻发稿</td>
+								<td class="dui_jie">
+									<div class="dj_box">
+										<span>小美</span> 
+										<img src="img/sanjiao.png"/>
+										<!--对接人联系方式框-->
+										<div class="link_way" style="display: none;">
+											<p>QQ : 227845699</p>
+											<a href="#">在线联系</a>
+										</div>
+									</div>
+								</td>
+								<td>1200</td>
+								<td>2017-10-01</td>
+								<td>2017-10-01</td>
+								<td class="color_y">已收款</td>
+								<td class="cz_box"></td>
+							</tr>
+							<!--已收款-->
+							<tr class="">
+								<td>XW20180108</td>
+								<td>新闻发稿</td>
+								<td class="dui_jie">
+									<div class="dj_box">
+										<span>小美</span> 
+										<img src="img/sanjiao.png"/>
+										<!--对接人联系方式框-->
+										<div class="link_way" style="display: none;">
+											<p>QQ : 227845699</p>
+											<a href="#">在线联系</a>
+										</div>
+									</div>
+								</td>
+								<td>1200</td>
+								<td>2017-10-01</td>
+								<td>2017-10-01</td>
+								<td class="color_y">已收款</td>
+								<td class="cz_box"></td>
+							</tr>
+						</table>
+					</div>
+					<!--统计-->
+					<div class="tong_ji">
+						<p>当前页面：共计10个订单／共计金额：23900元</p>
+					</div>
+					<!--分页-->
+					<ul class="page clearfix" maxshowpageitem="5" pagelistcount="10"  id="page"></ul>
+				</div>
+			</div>
+		</div>
+		
+        <div class="tx-con">
+        	<div class="tx-cona">
+        		<p>更换头像</p>
+        		<a class="close-a" href="javascript:;"><img src="img/close_btn.png"/></a>
+        	</div>
+        	<div class="xz-img">
+        		<input type="file" name="fileField" id="fileField" />
+        		<div class="xz-imga">
+        			<img src="img/tx_img.jpg" />
+        		</div>
+        		<div class="tx-btn">
+        			<input type="submit" name="" id="" value="保存修改" />
+        		</div>
+        	</div>
+        </div>
+        <div class="touxiang-bg"></div>
+        <!--分页插件-->
+        <script type="text/javascript" src="js/page.js" ></script>
+		<script type="text/javascript">
+			$(".img-a").click(function(){
+				if($(".order-li").css("display")=="none"){
+					$(".order-li").show();
+				}else{
+					$(".order-li").hide();
+				}
+			});
+			$(".xxr-img").hover(function(){
+				if($(".img-ts").css("display")=="none"){
+					$(".img-ts").show();
+				}else{
+					$(".img-ts").hide();
+				}
+			});
+			$(function () {
+			    H_login = {};
+			    H_login.openLogin = function(){
+			        $('.xxr-img a').click(function(){
+			            $('.tx-con').show();
+			            $('.touxiang-bg').show();
+			        });
+			    };
+			    H_login.closeLogin = function(){
+			        $('.close-a').click(function(){
+			            $('.tx-con').hide();
+			            $('.touxiang-bg').hide();
+			        });
+			    };
+			    
+			    H_login.run = function () {
+			        this.closeLogin();
+			        this.openLogin();
+			        this.loginForm();
+			    };
+			    H_login.run();
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var h = $(".center-xx").height();
+				console.log(h);
+				$(".center-xxl").height(h);
+			});
+			
+			$(".order-li ul li").on("click","a",function(){
+				if(!$(this).hasClass("order_act")){
+					$(this).addClass("order_act").parent().siblings("li").find("a").removeClass("order_act");
+				}
+			});
+			
+			//对接人hover
+			$(".dui_jie .dj_box").hover(function(){
+				$(this).find("img").hide();
+				$(this).children(".link_way").show();
+			},function(){
+				$(this).find("img").show();
+				$(this).children(".link_way").hide();
+			});
+			//备注信息hover
+			$(".bei_zhu").hover(function(){
+				$(this).find(".news_dian").hide();
+				$(this).children(".link_way").show();
+			},function(){
+				$(this).children(".link_way").hide();
+			});
+			
+			//分页js
+			function tt(dd){
+				//alert(dd);
+			}
+			var GG = {
+				"kk":function(mm){
+				   // alert(mm);
+				}
+			}
+			
+			$("#page").initPage(71,1,GG.kk);
+		</script>
+	</body>
+</html>
