@@ -73,6 +73,7 @@ jQuery.fn.extend({
                     	return false;
                     }
                 }
+                $("#img_box"+n).attr("src",_self.getObjectURL(this.files[0])).show();
                 opts.Callback()
             }
         })

@@ -31,11 +31,6 @@
 							<img src="img/center_order.png" />
 							<p class="img-a">我的订单<img src="img/nav_j.png" /></p>
 						</a>
-						<!--
-                        	作者：offline
-                        	时间：2018-01-23
-                        	描述：我的订单下拉
-                        -->
 						<div class="order-li">
 							<ul>
 								<li><a href="#">全部订单</a></li>
@@ -49,35 +44,120 @@
 					</div>
 				</div>
 				<div class="center-xxr">
-					<div class="order-top">
-						<p>我的技能</p>
-						
+					<div class="order-top clearfix">
+						<p class="float_lf">我的技能</p>
+						<p  class="float_rt jn_top">
+							<a class="add_jn" href="javascript:;">添加技能</a>
+							<a class="edit_btn" href="javascript:;">编辑</a>
+						</p>
 					</div>
 					
+					<div class="add_jinengs clearfix" style="display: none;">
+						<!--分类下拉框-->
+						<p>
+							<select name="">
+								<option value="">其他</option>
+							</select>
+						</p>
+						<!--技能名称-->
+						<p><input type="text" name="" id="" value="" placeholder="新闻稿发布"/></p>
+						<!--金额-->
+						<p><span>报价/元</span><input type="text" name="" id="" value="" /></p>
+						<p><button type="button">保存</button></p>
+					</div>
+					<table id="jn_table" border="0" cellspacing="" cellpadding="">
+						<tr>
+							<th class="hidden_box col0"></th>
+							<th class="col1"><p>技能名称</p></th>
+							<th class="col2 text_center"><p>报价/元</p></th>
+							<th class="col3 text_center"><p class="float_rt">操作</p></th>
+						</tr>
+						
+						<tr>
+							<!--编辑状态显示-->
+							<td class="hidden_box text_left check_boxs"><input type="checkbox" name="" id="" value="" /></td>
+							
+							<td class=""><p>搜索营销</p></td>
+							<td class="price text_center">
+								<p>
+									<span>5</span>
+									<input type="text" id="" value="" />
+								</p>
+							</td>
+							<!--编辑状态隐藏-->
+							<td class="btn_boxs text_center">
+								<p class="float_rt">
+									<a class="del_jn" href="javascript:;">删除</a>
+									<a class="edit_jn" href="javascript:;">编辑</a>
+								</p>
+							</td>	
+							<!--编辑状态显示-->
+							<td class="hidden_box text_center"><p class="float_rt">不可编辑</p></td>
+						</tr>
+						<tr>
+							<!--编辑状态显示-->
+							<td class="hidden_box text_left check_boxs"><input type="checkbox" name="" id="" value="" /></td>
+							
+							<td class=""><p>搜索营销</p></td>
+							<td class="price text_center">
+								<p>
+									<span>5</span>
+									<input type="text" id="" value="" />
+								</p>
+							</td>
+							<!--编辑状态隐藏-->
+							<td class="btn_boxs text_center">
+								<p class="float_rt">
+									<a class="del_jn" href="javascript:;">删除</a>
+									<a class="edit_jn" href="javascript:;">编辑</a>
+								</p>
+							</td>	
+							<!--编辑状态显示-->
+							<td class="hidden_box text_center"><p class="float_rt">不可编辑</p></td>
+						</tr>
+						<tr>
+							<!--编辑状态显示-->
+							<td class="hidden_box text_left check_boxs"><input type="checkbox" name="" id="" value="" /></td>
+							
+							<td class=""><p>搜索营销</p></td>
+							<td class="price text_center">
+								<p>
+									<span>5</span>
+									<input type="text" id="" value="" />
+								</p>
+							</td>
+							<!--编辑状态隐藏-->
+							<td class="btn_boxs text_center">
+								<p class="float_rt">
+									<!--<a class="del_jn" href="javascript:;">删除</a>
+									<a class="edit_jn" href="javascript:;">编辑</a>-->
+									<span>审核中...</span>
+								</p>
+							</td>	
+							<!--编辑状态显示-->
+							<td class="hidden_box text_center"><p class="float_rt">不可编辑</p></td>
+						</tr>
+						
+						<!--全选、取消、删除操作-->
+						<tr class="cz_boxs">
+							<td class="check_box_all clearfix">
+								<input class="float_lf" type="checkbox" name="" id="ch_all" value="" />
+								<label class="float_lf" for="#ch_all">全选</label>
+							</td>
+							<td></td>
+							<td></td>
+							<td class="text_center">
+								<p class="float_rt">
+									<button class="del_all">删除</button>
+									<button class="qu_xiao">取消</button>
+								</p>
+							</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
-		<!--
-        	作者：offline
-        	时间：2018-01-23
-        	描述：修改头像弹框
-        -->
-        <div class="tx-con">
-        	<div class="tx-cona">
-        		<p>更换头像</p>
-        		<a class="close-a" href="javascript:;"><img src="img/close_btn.png"/></a>
-        	</div>
-        	<div class="xz-img">
-        		<input type="file" name="fileField" id="fileField" />
-        		<div class="xz-imga">
-        			<img src="img/tx_img.jpg" />
-        		</div>
-        		<div class="tx-btn">
-        			<input type="submit" name="" id="" value="保存修改" />
-        		</div>
-        	</div>
-        </div>
-        <div class="touxiang-bg"></div>
+        
 		<script type="text/javascript">
 			$(".img-a").click(function(){
 				if($(".order-li").css("display")=="none"){
@@ -111,9 +191,71 @@
 			    H_login.run = function () {
 			        this.closeLogin();
 			        this.openLogin();
-			        this.loginForm();
+//			        this.loginForm();
 			    };
 			    H_login.run();
+			});
+		</script>
+		<script type="text/javascript">
+			//添加技能
+			$(".add_jn").click(function(){
+				if($(".add_jinengs").css("display")=="none"){
+					$(".add_jinengs").css("display","block");
+				}else{
+					$(".add_jinengs").css("display","none");
+				}
+			});
+			//顶部编辑按钮
+			$(".edit_btn").click(function(){
+				$(".hidden_box").show();
+				$(".cz_boxs").show();
+				$(".btn_boxs").hide();
+			});
+			//点击复选框
+			$(".check_boxs").on("click","input",function(){
+				var lens_num = $(".check_boxs input").length;
+				var checked_num = $(".check_boxs input:checked").length;
+				if(checked_num == lens_num){
+					$("#ch_all").attr("checked",true);
+				}else{
+					$("#ch_all").removeAttr("checked");
+				}
+			});
+			//点击全选按钮
+			$("#ch_all").click(function(){
+				if(!$(this).attr("checked")){
+					$(".check_boxs input").removeAttr("checked");
+				}else{
+					$(".check_boxs input").attr("checked",true);
+				}
+			});
+			//复选框选择点击删除选中行
+			$(".del_all").click(function(){
+				$(".check_boxs input:checked").parents("tr").remove();
+			});
+			//点击取消按钮退出编辑状态
+			$(".qu_xiao").click(function(){
+				$(".hidden_box").hide();
+				$(".cz_boxs").hide();
+				$(".btn_boxs").show();
+				$("input:checked").removeAttr("checked");
+			});
+			
+			//列表内删除按钮
+			$(".del_jn").click(function(){
+				$(this).parents("tr").remove();
+			});
+			//列表内编辑按钮
+			$(".edit_jn").click(function(){
+				var price_num = $(this).parents(".btn_boxs").siblings(".price").find("span").text();
+				$(this).parents(".btn_boxs").siblings(".price").find("span").hide();
+				$(this).parents(".btn_boxs").siblings(".price").find("input").show().val(price_num).focus();
+			});
+			//编辑价格失去焦点后
+			$(".price input").blur(function(){
+				var new_price = $(this).val();
+				$(this).hide();
+				$(this).siblings("span").text(new_price).show();
 			});
 		</script>
 	</body>

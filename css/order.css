@@ -205,13 +205,77 @@
 	padding: 20px 0;
 }
 .touxiang_box .img_box {
-	width: 100px;
-	height: 100px;
-	margin-left: 10px;
+	display: inline-block;
+	min-width: 100px;
+	min-height: 100px;
 	border:1px solid #e5e5e5;
 }
 .touxiang_box .img_box img{
+	display: block;
+	width: 100px;
+	height: 100px;
+	float: left;
+	border:1px solid #e5e5e5;
+}
+.upload_btn {
+	margin-top: 15px;
+}
+.upload_btn p{
+	width: 80px;
+	position: relative;
+	margin-right: 10px;
+}
+.upload_btn p:first-child+p{
+	width: 240px;
+}
+.upload_btn p span{
+	display: inline-block;
+	border:1px solid #e5e5e5;
+	border-radius: 3px;
+	padding: 2px 10px;
+	cursor: pointer;
+}
+.upload_btn p .file_name{
+	border:none;
+	padding: 2px 0;
+}
+.upload_btn p input{
+	width: 80px;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 10;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.upload_img .img_title{
+	width: 15%;
+}
+.upload_img .img_list{
+	width: 80%;
+}
+#bei_zhu{
 	width: 100%;
+	min-height: 100px;
+	box-sizing: border-box;
+	padding: 10px;
+}
+#sure_sub{
+	width: 100px;
+	display: block;
+	margin: 40px auto 20px auto;
+	color:#fff !important;
+	text-align: center;
+	padding: 5px 0;
+	background-color: #FF6400;
+	border:1px solid #FF6400;
+}
+.err_txt{
+	width: 200px !important;
+	margin-top: 10px;
+	color:#E91919;
 }
 @media only screen and (min-width: 1367px) {
 	.bz_box{

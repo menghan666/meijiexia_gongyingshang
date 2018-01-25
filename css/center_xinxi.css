@@ -35,7 +35,7 @@
 	padding-top: 23px;
 }
 .center-con .center-xx .center-xxr{
-	width: 967px;
+	width: 966px;
 	min-height: 650px;
 	height: auto;
 	overflow: hidden;
@@ -516,4 +516,135 @@ table.ysh-tb tr td .dj_box span{
 	margin: 0 auto;
 	margin-top: 5px;
 	background-color: #ff6401;
+}
+
+/****************我的技能zxt***************/
+.jn_top a{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: center;
+	padding: 2px 10px 4px 10px;
+	margin-left: 10px;
+	border:1px solid #FF6400;
+	border-radius: 3px;
+}
+.jn_top a:first-child{
+	color:#fff;
+	background-color: #FF6400;
+}
+.jn_top a:first-child+a{
+	color:#FF6400;
+}
+.add_jinengs{
+	width: 930px;
+	margin: 0 auto;
+	padding: 15px 0 0 0;
+}
+.add_jinengs p{
+	float: left;
+	margin-left: 10px;
+}
+.add_jinengs p:first-child{
+	margin-left:0;
+}
+.add_jinengs p:first-child select{
+	width: 330px;
+	display: inline-block;
+	height: 30px;
+	box-sizing: border-box;
+	padding:0 10px;
+	border: 1px solid #E5E5E5;
+}
+.add_jinengs p:first-child+p input{
+	width: 260px;
+	display: inline-block;
+	height: 30px;
+	box-sizing: border-box;
+	padding:5px 10px;
+	border: 1px solid #E5E5E5;	
+}
+.add_jinengs p:first-child+p+p{
+	width: 250px;
+}
+.add_jinengs p:first-child+p+p span{
+	display: inline-block;
+	padding:5px 10px;
+	background-color: #E5E5E5;
+}
+.add_jinengs p:first-child+p+p input{
+	display: inline-block;
+	height: 30px;
+	box-sizing: border-box;
+	padding:5px 10px;
+	border: 1px solid #E5E5E5;
+}
+.add_jinengs p:first-child+p+p+p button{
+	width: 60px;
+	height: 30px;
+	color:#fff;
+	box-sizing: border-box;
+	padding:0 10px;
+	background-color: #FF6400;
+	border: 1px solid #FF6400;
+}
+#jn_table{
+	width: 930px;
+	margin: 15px auto;
+	text-align: left;
+}
+#jn_table tr{
+	border-bottom: 1px solid #E5E5E5;
+}
+#jn_table tr:first-child{
+	background-color: #E5E5E5;
+	padding:0 15px;
+}
+#jn_table tr:first-child th{
+	padding: 5px 0;
+}
+#jn_table tr td{
+	padding: 12px 0;
+}
+#jn_table tr .price span{
+	display: inline-block;
+	min-width: 54px;
+	height: 24px;
+	line-height: 24px;
+}
+#jn_table tr .price input{
+	display: none;
+	width: 50px;
+	text-align: center;
+}
+#jn_table tr th p,#jn_table tr td p{
+	width: 50%;
+	margin: 0 auto;
+}
+.hidden_box{
+	display: none;
+}
+.cz_boxs{
+	display: none;
+	border-bottom: none !important;
+}
+.cz_boxs td button{
+	padding: 4px 10px;
+	font-size: 14px;
+	border:1px solid #E5E5E5;
+	background-color: #E5E5E5;
+}
+.check_boxs,.check_box_all{
+	padding-left: 30px !important;
+}
+.check_boxs input,.check_box_all input{
+	width: 18px;
+	height: 18px;
+}
+.check_box_all input{
+	margin-top: 2px;
+	margin-right: 5px;
+}
+.hidden_box.col0{
+	width: 150px;
 }

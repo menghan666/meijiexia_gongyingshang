@@ -62,10 +62,19 @@ main, nav, header, footer, section, article, aside, dialog, figure, menu ,img{
 	margin-left: 20px;
 }
 .float_lf{
-	float:left;
+	float:left !important;
 }
 .float_rt{
-	float:right;
+	float:right !important;
+}
+.text_center{
+	text-align: center;
+}
+.text_left{
+	text-align: left;
+}
+.text_right{
+	text-align: right;
 }
 .txt-num1{
 	overflow: hidden;

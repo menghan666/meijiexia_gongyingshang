@@ -214,22 +214,38 @@
 	        	<div class="tx-cona">
 	        		<span>提交审核</span>
 	        	</div>
-	        	<form action="" method="">
+	        	<form action="" method="" onsubmit="return sub_event();">
 	        		<div class="upload_img clearfix">
-	        			<p class="float_lf">图片凭证</p>
-	        			<div class="float_lf">
-	        				<div class="img_box"><img src="" alt="" /></div>
-	        			</div>
-	        			<div class="float_lf">
-	        				
+	        			<p class="float_lf img_title">图片凭证</p>
+	        			<div class="float_lf img_list clearfix">
+	        				<div class="img_box clearfix"></div>
+	        				<div class="upload_btn clearfix">
+		        				<p class="float_lf">
+		        					<span>选取文件</span>
+		        					<input type="file" name="" id="up_imgs" value="" />
+		        				</p>
+		        				<p class="float_lf">
+		        					<span>添加附件</span>
+		        					<span class="file_name"></span>
+		        					<input type="file" name="" id="up_file" value="" />
+		        				</p>
+		        				<p class="err_txt float_lf"></p>
+		        			</div>
 	        			</div>
 	        		</div>
-	        		<input type="submit" value=""/>
+	        		<div class="upload_img clearfix" style="margin-top: 20px;">
+	        			<p class="float_lf img_title">备注信息</p>
+	        			<div class="float_lf img_list clearfix">
+	        				<textarea id="bei_zhu" name="" rows="" cols=""></textarea>
+	        			</div>
+	        		</div>
+	        		<input id="sure_sub" type="submit" value="确认提交" placeholder=""/>
 	        	</form>
 	        </div>
         </div>
         <!--分页插件-->
         <script type="text/javascript" src="js/page.js" ></script>
+        <script src="js/uploadPreview.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(".img-a").click(function(){
 				if($(".order-li").css("display")=="none"){
@@ -262,18 +278,12 @@
 			    H_login.run = function () {
 			        this.closeLogin();
 			        this.openLogin();
-			        this.loginForm();
+//			        this.loginForm();
 			    };
 			    H_login.run();
 			});
 		</script>
 		<script type="text/javascript">
-			$(document).ready(function(){
-				var h = $(".center-xx").height();
-				console.log(h);
-				$(".center-xxl").height(h);
-			});
-			
 			$(".order-li ul li").on("click","a",function(){
 				if(!$(this).hasClass("order_act")){
 					$(this).addClass("order_act").parent().siblings("li").find("a").removeClass("order_act");
@@ -308,6 +318,47 @@
 				"kk":function(mm){}
 			}
 			$("#page").initPage(71,1,GG.kk);
+			
+			//上传图片
+			var n=0;
+			function add_imgs(){
+				n++;
+				var new_img = $("<img style='display: none;' id='img_box"+n+"' src='' alt='' />");
+				$(".img_box").append(new_img);
+			};
+			$("#up_imgs").click(function(){
+				add_imgs();
+			});
+			
+			$("#up_imgs").uploadPreview({ 
+				Img: "img_box"+n,
+				Width: 210,
+				Height: 210 
+			});
+			$("#up_imgs").change(function(){
+				if($(".img_box img").attr("src") !==""){
+					$(".err_txt").text("");
+				}
+			});
+			//获取上传文件名称并显示
+			$("#up_file").change(function(){
+				var file = $("#up_file").val();
+				var strFileName=file.replace(/^.+?\\([^\\]+?)(\.[^\.\\]*?)?$/gi,"$1");  //正则表达式获取文件名，不带后缀
+				var FileExt=file.replace(/.+\./,"");   //正则表达式获取后缀
+				$(".file_name").text(strFileName+"."+FileExt);
+				if($(".file_name").text() !==""){
+					$(".err_txt").text("");
+				}
+			});
+						
+			//提交
+			function sub_event(){
+				if($("#up_imgs").val()==""&&$(".file_name").text()==""){
+					$(".err_txt").text("上传文件不能为空！");
+					return false;
+				}
+			}
 		</script>
 	</body>
+	
 </html>
