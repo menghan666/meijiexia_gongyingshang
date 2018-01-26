@@ -648,3 +648,260 @@ table.ysh-tb tr td .dj_box span{
 .hidden_box.col0{
 	width: 150px;
 }
+/*登录注册页面样式*/
+.login-top{
+	width:1200px;
+	height: 80px;
+	margin: 0 auto;
+}
+.login-top img{
+	margin: 11px 30px 0 30px;
+	float: left;
+}
+.login-top p{
+	float: left;
+	line-height: 80px;
+	font-size: 18px;
+	color: #333;
+}
+.login-con{
+	width:100%;
+	height: 540px;
+	background: url(../img/login_bg.jpg) center 0 no-repeat;
+	min-width: 1200px;
+}
+footer{
+	text-align: center;
+	line-height: 80px;
+	color: #666;
+}
+.login-con .login-cona{
+	width:1200px;
+	height: 540px;
+	margin: 0 auto;
+}
+.login-con .login-cona .login-right{
+	width:370px;
+	height: 440px;
+	float: right;
+	background: #fff;
+	margin-top: 48px;
+	box-shadow: 0px 0px 20px #c74c34;
+	border-radius: 5px;
+	position: relative;
+}
+.login-con .login-cona .login-right h1{
+	color: #ef6f2d;
+	font-size: 26px;
+	text-align: center;
+	line-height: 80px;
+	font-weight: normal;
+	margin-top: 7px;
+}
+.lo-name{
+	width:310px;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 auto 10px;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+}
+.lo-name img{
+	float: left;
+	margin: 6px;
+}
+.lo-name input{
+	width: 270px;
+	height: 32px;
+	background: none;
+	border: none;
+	font-size: 14px;
+	color: #999;
+}
+.lo-namea{
+	width:310px;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 auto 10px;
+	border-radius: 5px;
+}
+.lo-namea .lo-nameal{
+	width: 224px;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+}
+.lo-namea .lo-nameal img{
+	float: left;
+	margin: 6px;
+}
+.lo-namea .lo-nameal input{
+	width: 190px;
+	height: 32px;
+	background: none;
+	border: none;
+	font-size: 14px;
+	color: #999;
+}
+.yzm-img{
+	width:63px;
+	height: 35px;
+	float: right;
+}
+.dx-yzm{
+	width:70px;
+	height: 33px;
+	float: right;
+	border: 1px solid #ff6400;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 12px;
+	color: #ff6400;
+	cursor: pointer;
+}
+.msgs1{
+	background:#E6E6E6;
+	color:#818080;
+	border:1px solid #CCCCCC;
+	}
+input.lo-in{
+	float: left;
+	margin: 11px 5px;
+}
+.lo-namea p{
+	color: #999;
+	font-size: 14px;
+}
+.lo-namea p span{
+	color: #ff6400;
+}
+.login-btn{
+	width:300px;
+	height: 40px;
+	background: #ff6400;
+	border-radius: 5px;
+	margin: 0 auto;
+	line-height: 40px;
+	text-align: center;
+	box-shadow: 0px 0px 10px #c74c34;
+	
+}
+.login-btn button{
+	width:300px;
+	height: 40px;
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 20px;
+}
+p.zh-p{
+	padding: 10px 30px;
+	text-align: right;
+	line-height: 35px;
+	color: #999;
+}
+p.zh-p a{
+	color: #ff6400;
+}
+.login-ta{
+	width:310px;
+	height: 320px;
+	margin: 20px auto 0;
+}
+.login-ta ul li{
+	width:155px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	color: #999;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.login-ta ul li.hits{
+	color: #ff6400;
+	border-bottom: 2px solid #ff6400;
+}
+.panec{
+	clear: both;
+	padding-top: 30px;
+	display: none;
+	text-align: center;
+}
+.lo-namec{
+	margin-bottom: 20px;
+}
+.lg-wj{
+	width:310px;
+	height: 35px;
+	line-height: 35px;
+	margin: 20px auto 10px;
+}
+.lg-wj input{
+	float: left;
+	margin: 12px 5px 0 5px;
+}
+.lg-wj p{
+	float: left;
+	font-size: 14px;
+	color: #666;
+}
+.lg-wj a{
+	float: right;
+	color: #ff6400;
+	font-size: 14px;
+}
+.dj-zc{
+	width:310px;
+	height: 45px;
+	line-height: 45px;
+	color: #999;
+	margin: 10px auto 5px;
+}
+p.p-left{
+	width:155px;
+	float: left;
+}
+p.p-left a{
+	color: #ff6400;
+}
+.login-img{
+	width:310px;
+	height: 50px;
+	margin: 0 auto;
+}
+.login-img img{
+	float: left;
+	margin-right: 10px;
+}
+.lo-named{
+	margin-bottom: 20px;
+}
+.success-con{
+	width:370px;
+	height: 440px;
+	background:rgba(255,255,255,0.8);
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	display: none;
+}
+.success-con img{
+	margin: 140px auto 10px;
+}
+.success-con p{
+	font-size: 24px;
+	font-weight: bold;
+	color: #ff6400;
+}
+.login-btn a{
+	display: block;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}
